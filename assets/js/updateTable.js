@@ -1,10 +1,7 @@
 async function updateTable(url, value, token) {
     const rows = await fetchTableData(url, value, token);
-    console.log(rows);
-
     const tbody = document.querySelector('tbody');
 
-    // Create project row
     const projectRow = createRow([
         rows.projectCode,
         rows.ProjectNames,
@@ -14,7 +11,6 @@ async function updateTable(url, value, token) {
     ]);
     tbody.appendChild(projectRow);
 
-    // Create task rows
     rows.TaskIds.forEach((taskId, index) => {
         const taskRow = createRow([
             '',
