@@ -76,7 +76,7 @@ if (isset($_POST['project'])) {
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
-                                    <th scope="col">Project Code</th>
+                                    <th scope="col" style="width: 10px;">Project Code</th>
                                     <th scope="col">Project Name/Task Name</th>
                                     <th scope="col" style="width: 10px;">Task</th>
                                     <th scope="col" style="width: 10px;">Edit</th>
