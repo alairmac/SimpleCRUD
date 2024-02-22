@@ -2,10 +2,10 @@ function createRow(cellsData) {
     const newRow = document.createElement('tr');
     cellsData.forEach(cellData => {
         const newCell = document.createElement('td');
-        if (cellData instanceof HTMLElement) { // Check if cellData is a DOM element
-            newCell.appendChild(cellData); // Append the button element to the cell
+        if (cellData instanceof HTMLElement) {
+            newCell.appendChild(cellData);
         } else {
-            newCell.textContent = cellData; // Set the text content of the cell
+            newCell.textContent = cellData;
         }
         newRow.appendChild(newCell);
     });
